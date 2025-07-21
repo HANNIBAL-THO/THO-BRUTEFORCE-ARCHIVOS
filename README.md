@@ -10,8 +10,6 @@ Herramienta de fuerza bruta para archivos comprimidos desarrollada en Python.
 
 ![Vista previa de la aplicación](preview.png)
 
-> **Nota:** Coloca una captura de pantalla de la aplicación en `preview.png` para verla aquí.
-
 ## Características
 
 - Interfaz gráfica moderna
@@ -30,7 +28,7 @@ Herramienta de fuerza bruta para archivos comprimidos desarrollada en Python.
 
 1. Clona el repositorio:
    ```bash
-   git clone [URL_DEL_REPOSITORIO]
+   git clone https://github.com/HANNIBAL-THO/THO-BRUTEFORCE-ARCHIVOS
    cd THO-BRUTEFORCE
    ```
 
@@ -67,7 +65,5 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ## Descargo de Responsabilidad
 
 Esta herramienta está diseñada únicamente para fines educativos y de recuperación de archivos propios. No me hago responsable del mal uso de esta herramienta.
-
-> ✅ Una vez hecho esto, tu programa podrá trabajar con archivos `.rar` sin problemas.
 
 ---
