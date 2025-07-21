@@ -1,0 +1,340 @@
+/* Main Application Styling */
+QMainWindow, QDialog, QWidget {
+    background-color: #0a0e14;
+    color: #e6e6e6;
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    font-size: 12px;
+    border: none;
+    outline: none;
+}
+
+/* Selection colors */
+QTextEdit::selection, QLineEdit::selection, QPlainTextEdit::selection {
+    background-color: #3a6ea5;
+    color: #ffffff;
+}
+
+/* Left Panel with Animation */
+#leftPanel {
+    background-color: #0f1620;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 20px 0;
+}
+
+/* Right Panel */
+#rightPanel {
+    background-color: #0f1620;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px;
+}
+
+/* Title Bar */
+#titleBar {
+    background-color: #1a2230;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 0 20px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e6e6e6;
+}
+
+/* Title bar content alignment */
+#titleBar QLabel {
+    padding: 12px 0;
+    margin: 0;
+}
+
+/* Content Container */
+#contentContainer {
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+}
+
+/* Labels */
+QLabel {
+    color: #a0ffa0;
+    font-size: 12px;
+    margin: 2px 0;
+    background: transparent;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #2a3a4d;
+    color: #e6e6e6;
+    border: 1px solid #3a4a5d;
+    border-radius: 4px;
+    padding: 8px 16px;
+    min-width: 100px;
+    font-weight: 500;
+    font-size: 12px;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+QPushButton:hover {
+    background-color: #35465a;
+    border-color: #4a5c72;
+    color: #ffffff;
+}
+
+QPushButton:pressed {
+    background-color: #1f2d3d;
+    border-color: #3a4a5d;
+}
+
+QPushButton:disabled {
+    background-color: #1a1f29;
+    color: #4a5568;
+    border-color: #2d3748;
+}
+
+/* Input Fields */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #1a2230;
+    color: #e6e6e6;
+    border: 1px solid #2d3748;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border-color: #4a90e2;
+    background-color: #1e293b;
+    box-shadow: 0 0 0 1px rgba(74, 144, 226, 0.3);
+}
+
+QLineEdit:disabled, QTextEdit:disabled {
+    background-color: rgba(20, 30, 20, 0.7);
+    color: #666666;
+    border-color: #333333;
+}
+
+/* Progress Bar */
+QProgressBar {
+    border: 1px solid #003300;
+    border-radius: 4px;
+    background-color: rgba(0, 30, 0, 0.7);
+    text-align: center;
+    color: #a0ffa0;
+    height: 22px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+QProgressBar::chunk {
+    /* Simplified gradient for better compatibility */
+    background: #00aa00;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #0f1620;
+    width: 10px;
+    margin: 0;
+    border-radius: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #2d3748;
+    min-height: 30px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #3a4a5d;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+/* Custom Title Bar Buttons */
+#minimizeButton, #maximizeButton, #closeButton {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    color: #a0a8b8;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+#minimizeButton:hover, #maximizeButton:hover {
+    background-color: #2d3748;
+    color: #e6e6e6;
+}
+
+#closeButton:hover {
+    background-color: #e81123;
+    color: white;
+}
+
+/* Group Box */
+QGroupBox {
+    border: 1px solid #2d3748;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 15px 10px 10px 10px;
+    color: #a0a8b8;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    margin-left: 5px;
+    padding: 0 8px;
+    background-color: #0f1620;
+    position: relative;
+    top: -20px;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #2d3748;
+    background: #0f1620;
+    border-radius: 4px;
+}
+
+QTabBar::tab {
+    background: #1a2230;
+    color: #a0a8b8;
+    padding: 8px 16px;
+    border: 1px solid #2d3748;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background: #2a3a4d;
+    color: #e6e6e6;
+    border-bottom: 2px solid #4a90e2;
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(0, 20, 0, 0.15); /* Slightly green-tinted transparent background */
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 0, 0.2); /* Lime green border */
+    backdrop-filter: blur(8px);
+    padding: 15px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* Make sure the main window background is black */
+QMainWindow {
+    background-color: #000000;
+}
+
+/* Ensure background widget is transparent */
+#backgroundWidget {
+    background: transparent;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: rgba(0, 20, 0, 200);
+    color: #2bff00;
+    border: 1px solid rgba(173, 255, 47, 100);
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin: 2px 0;
+    font-weight: bold;
+    min-width: 100px;
+    max-width: 300px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+QPushButton:hover {
+    background-color: rgba(30, 80, 30, 200);
+    border: 1px solid #2dff03;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+QPushButton:pressed {
+    background-color: #006400;  /* Dark green */
+    color: #ffffff;
+    border: 1px solid #1eff00;  /* Bright green */
+}
+
+QPushButton:disabled {
+    color: #004d00;  /* Dark green */
+    background-color: rgba(0, 20, 0, 100);
+    border: 1px solid #004d00;
+}
+
+/* Radio Buttons */
+QRadioButton {
+    color: #32fa00;
+    padding: 2px 8px 2px 2px;
+    margin: 1px 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+QRadioButton::indicator {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #33ff00;
+    border-radius: 6px;
+    background-color: rgba(0, 20, 0, 200);
+}
+
+QRadioButton::indicator:checked {
+    background-color: #09ff00;
+    border: 2px solid #00ff15;
+    background-image: radial-gradient(circle, #ffffff 0%, #09ff00 100%);
+}
+
+/* Line Edits */
+QLineEdit {
+    background-color: rgba(0, 20, 0, 150);
+    color: hsl(118, 100%, 50%);
+    border: 1px solid rgba(173, 255, 47, 100);
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 2px 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+QLineEdit:focus {
+    border: 1px solid #7fff00;
+    background-color: rgba(0, 40, 0, 200);
+}
+
+/* Text Edits */
+QTextEdit {
+    background-color: rgba(0, 20, 0, 180);
+    color: #00ff22;
+    border: 1px solid rgba(173, 255, 47, 100);
+    border-radius: 3px;
+    padding: 8px;
+    margin: 3px 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    min-height: 100px;
+}
