@@ -29,7 +29,7 @@ Herramienta de fuerza bruta para archivos comprimidos desarrollada en Python.
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/HANNIBAL-THO/THO-BRUTEFORCE-ARCHIVOS
-   cd THO-BRUTEFORCE
+   cd THO-BRUTEFORCE-ARCHIVOS
    ```
 
 2. Instala las dependencias:
